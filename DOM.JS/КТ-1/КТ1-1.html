@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Y(ar, yes, no) {
+            if (ar > 11) callbackYes(ar)
+            else callbackNo(ar);
+        }
+        function callbackYes() {
+            console.log("X = ", 2 * (x * x * x));
+        }
+        function callbackNo() {
+            console.log("X = ", 2 * x - 3);
+        }
+
+
+        let x = Number(prompt("Введите X"));
+        Y(x, callbackYes, callbackNo)
+    </script>
+
+</body>
+
+</html>
